@@ -1,33 +1,38 @@
-# redux-toolkit with persist
+# CRA Redux Toolkit with Persist
 
-## Package
+### redux-toolkit 사용 테스트 체크리스트
 
-- react-redux
-- react-persist (persist 사용시)
-- @reduxjs/toolkit
+- persist 사용버전, 미사용버전 분리
+- 기존 redux와 사용성 비교
 
 ## Directory
 
 ```
 src
- ┣ features
- ┃ ┗ counter
- ┃ ┃ ┗ counterSlice.ts
- ┣ hooks
- ┃ ┗ state.ts // dispatch, selector 공통사용
- ┣ store
- ┃ ┗ index.ts
- ┣ App.tsx
- ┣ index.tsx
+├─ features
+│	└─ counter
+│	│	└─ counterSlice.ts
+├─ hooks
+│	└─ state.ts // dispatch, selector 공통사용
+├─ store
+│	└─ index.ts
+├─ App.tsx
+├─ index.tsx
 ```
 
-## Setting
+## Installation and Usage
 
-### only redux-toolkit
+### Package
 
-#### index.ts
+- react-redux
+- react-persist (persist 사용시)
+- @reduxjs/toolkit
 
-```
+### Setting (only redux-toolkit)
+
+index.ts
+
+```typescript
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
@@ -44,9 +49,9 @@ ReactDOM.render(
 )
 ```
 
-#### store/index.ts
+store/index.ts
 
-```
+```typescript
 import {
   Action,
   combineReducers,
@@ -64,11 +69,11 @@ export const store = configureStore({
 })
 ```
 
-### redux-toolkit with redux-persist
+### Setting (redux-toolkit with redux-persist)
 
-#### index.ts
+index.ts
 
-```
+```typescript
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
@@ -82,7 +87,9 @@ const persistor = persistStore(store) // 추가
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}> // 추가
+      <PersistGate loading={null} persistor={persistor}>
+        {' '}
+        // 추가
         <App />
       </PersistGate>
     </Provider>
@@ -91,14 +98,10 @@ ReactDOM.render(
 )
 ```
 
-#### store/index.ts
+store/index.ts
 
-```
-import {
-  Action,
-  combineReducers,
-  configureStore,
-} from '@reduxjs/toolkit'
+```typescript
+import { Action, combineReducers, configureStore } from '@reduxjs/toolkit'
 import counterReducer from 'features/counter/counterSlice'
 import storage from 'redux-persist/lib/storage' // 추가
 import {
@@ -115,7 +118,8 @@ const reducers = combineReducers({
   counter: counterReducer,
 })
 
-const persistConfig = { // 추가
+const persistConfig = {
+  // 추가
   key: 'root',
   storage,
 }
@@ -131,3 +135,10 @@ export const store = configureStore({
   }), // 추가
 })
 ```
+
+## Comment
+
+- 기본 세팅이 보다 편리함 (`immer, thunk` 포함)
+- thunk가 포함되어 있어서 `redux-saga`를 써야 할지는 고민이 필요
+- hooks 와 slice 를 조합해서 사용하면 좋아보임
+- 간단한 상태관리는 `recoil` 을 사용해보는 것을 고려할지도...
