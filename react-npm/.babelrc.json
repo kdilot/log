@@ -1,0 +1,20 @@
+{
+  "presets": [["react-app", { "flow": false, "typescript": true }]],
+  "plugins": [
+    "babel-plugin-styled-components",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@icons": "./src/assets/icons",
+          "@helpers": "./src/helpers",
+          "@styles": "./src/styles",
+          "@constants": "./src/constants",
+          "@components": "./src/components"
+        },
+        "extensions": [".ts", ".tsx", ".jsx", ".js", ".json"]
+      }
+    ]
+  ]
+}
