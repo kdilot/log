@@ -9,15 +9,15 @@
 
 ```
 src
-├─ features
-│	└─ counter
-│	│	└─ counterSlice.ts
-├─ hooks
-│	└─ state.ts // dispatch, selector 공통사용
-├─ store
-│	└─ index.ts
-├─ App.tsx
-├─ index.tsx
+ ├─ features
+ |   └─ counter
+ |        └─ counterSlice.ts
+ ├─ hooks
+ |   └─ state.ts              // dispatch, selector 공통사용
+ ├─ store
+ |   └─ index.ts
+ ├─ App.tsx
+ ├─ index.tsx
 ```
 
 ## Installation and Usage
