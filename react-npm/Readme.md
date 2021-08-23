@@ -1,4 +1,4 @@
-# React Component NPM verson
+# React Component NPM version
 
 ### React 컴포넌트 UI 구성요소 NPM 세팅
 
@@ -11,21 +11,21 @@
 
 ```
 src
-├─ components			//	컴포넌트
+├─ components     //	컴포넌트
 ├─ assets
-|   └─ icons			//	svg 아이콘
-├─ helpers				//	공통 함수
-├─ constants			//	공통 상수
-├─ styles				//	공통 스타일
+|   └─ icons      //	svg 아이콘
+├─ helpers        //	공통 함수
+├─ constants      //	공통 상수
+├─ styles         //	공통 스타일
 index.ts
 .storybook
-├─ main.js			//	storybook 설정
-└─ preview.js		//	storybook 설정
-.babelrc.json		//	babel 설정
-.gitignore			//	git
-.npmignore			//	npm 배포 설정
-rollup.config.js	//	rollup 설정
-tsconfig.json		//	typescript 설정
+├─ main.js        //	storybook 설정
+└─ preview.js     //	storybook 설정
+.babelrc.json     //	babel 설정
+.gitignore        //	git
+.npmignore        //	npm 배포 설정
+rollup.config.js  //	rollup 설정
+tsconfig.json     //	typescript 설정
 ```
 
 ## Installation and Useage
@@ -51,30 +51,30 @@ tsconfig.json
 
 ```typescript
 {
-	"compilerOptions": {
-	"declaration": true,  //  자동으로 d.type 파일생성
-	"declarationDir": "./build",  // 생성된 d.type 파일이 들어갈 경로
-	"baseUrl": "./src",
-	"paths": {
+  "compilerOptions": {
+    "declaration": true,          //  자동으로 d.type 파일생성
+    "declarationDir": "./build",  // 생성된 d.type 파일이 들어갈 경로
+    "baseUrl": "./src",
+    "paths": {
       "@icons/*": ["assets/icons/*"],
       "@helpers/*": ["helpers/*"],
       "@styles/*": ["styles/*"],
       "@constants/*": ["constants/*"],
       "@components/*": ["components/*"]
     },
-	"target": "es5",
-	"lib": ["dom", "dom.iterable", "esnext"],
-	"skipLibCheck": true,
-	"esModuleInterop": true,
-	"allowSyntheticDefaultImports": true,
-	"strict": true,
-	"module": "esnext",
-	"moduleResolution": "node",
-	"resolveJsonModule": true,
-	"jsx": "react",
-	"noImplicitAny": false
-	},
-	"exclude": ["**/*.stories.tsx"] //  스토리북 제외
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "noImplicitAny": false
+    },
+  "exclude": ["**/*.stories.tsx"] //  스토리북 제외
 }
 ```
 
@@ -98,8 +98,8 @@ yarn add -D babel babel-plugin-styled-components babel-preset-react-app babel-pl
 
 ```typescript
 {
-	"presets": [["react-app", { "flow": false, "typescript": true }]],
-	"plugins": [
+  "presets": [["react-app", { "flow": false, "typescript": true }]],
+  "plugins": [
     "babel-plugin-styled-components",
     [
       "module-resolver",
@@ -112,7 +112,7 @@ yarn add -D babel babel-plugin-styled-components babel-preset-react-app babel-pl
           "@constants": "./src/constants",
           "@components": "./src/components"
         },
-        "extensions": [".ts", ".tsx", ".jsx", ".js", ".json"]
+          "extensions": [".ts", ".tsx", ".jsx", ".js", ".json"]
       }
     ]
   ]
@@ -177,8 +177,8 @@ package.json
 
 ```typescript
 "scripts": {
-	"build": "tsx --emitDeclarationOnly & rollup -c",
-	...
+  "build": "rollup -c",
+  ...
 },
 ```
 
@@ -194,7 +194,7 @@ package
 
 ```typescript
 yarn add -D @storybook/react@6.0.28 tsconfig-paths-webpack-plugin
-//	최신버전 사용시 peerDependency react 오류발생
+// 최신버전 사용시 peerDependency react 오류발생
 ```
 
 .storybook
@@ -239,9 +239,9 @@ package.json
 
 ```typescript
 "scripts": {
-	...
-	"storybook": "start-storybook -p 6006",
-	"build-storybook": "build-storybook"
+  ...
+  "storybook": "start-storybook -p 6006",
+  "build-storybook": "build-storybook"
 },
 ```
 
