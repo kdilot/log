@@ -301,8 +301,8 @@ rollup.min.config.js
 ### publish
 
 ```
-npm login			//	로그인
-npm whoami			//	로그인 유저 확인
-npm info <패키지명>	// 패키지명 배포 확인여부 404 오류시 사용가능
-npm pubilsh			//	배포
+npm login           //	로그인
+npm whoami          //	로그인 유저 확인
+npm info <패키지명>  // 패키지명 배포 확인여부 404 오류시 사용가능
+npm pubilsh         //	배포
 ```
