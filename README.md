@@ -1,11 +1,11 @@
 Project Setting / Test
 
 - next with apollo
-  1.  [install](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo1#readme)
-  2.  [apollo client & server](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo2#readme)
-  3.  [apollo schema modules](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo3#readme)
-  4.  [graphql code generator](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo4#readme)
-  5.  [style with emotion](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo5#readme)
+  - [install](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo1#readme)
+  - [apollo client & server](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo2#readme)
+  - [apollo schema modules](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo3#readme)
+  - [graphql code generator](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo4#readme)
+  - [style with emotion](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo5#readme)
 - [next auth](https://github.com/kdilot/log/tree/main/next-with-auth#readme)
 - [react router v6](https://github.com/kdilot/log/tree/main/react-router#readme)
 - [react component with storybook (NPM)](https://github.com/kdilot/log/tree/main/react-component-npm-storybook#readme)
