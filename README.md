@@ -18,6 +18,7 @@ Project Setting / Test
 
 Issue
 
+- [recoil key duplicate warning](https://github.com/kdilot/log/tree/main/next-with-apollo/docs/recoil-next-duplicate-issue.md)
 - [react storybook version](https://github.com/kdilot/log/tree/main/cra-storybook#readme)
 - [IE11 적용](https://gist.github.com/kdilot/80204841f80b6f47ba0fd92fc749e6da)
 - [Loadable-Component](https://gist.github.com/kdilot/f1d57e88fb3c0c90e6fc150c83bf39ff)
