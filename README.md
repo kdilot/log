@@ -1,5 +1,6 @@
 Project Setting / Test
 
+- [google sheet api v4](https://github.com/kdilot/log/blob/main/docs/google-sheet-api.md)
 - next with apollo
   - [install](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo1#readme)
   - [apollo client & server](https://github.com/kdilot/log/tree/main/next-with-apollo/next-with-apollo2#readme)
