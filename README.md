@@ -1,5 +1,6 @@
 Project Setting / Test
 
+- [webpack5 module federation](https://github.com/kdilot/log/tree/main/cra-module-federation#readme)
 - [react suspense with error boundary](https://github.com/kdilot/log/blob/main/next-with-boundary/README.md)
 - [electron with vite](https://github.com/kdilot/log/tree/main/electron-vite#readme)
 - [react ui component](https://github.com/kdilot/log/blob/main/docs/ui-component.md)
