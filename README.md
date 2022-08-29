@@ -1,5 +1,6 @@
 Project Setting / Test
 
+- [apollo graphql codegen with suspense](https://github.com/kdilot/log/blob/main/docs/apollo-graphql-codegen-suspense.md)
 - [webpack5 module federation](https://github.com/kdilot/log/tree/main/cra-module-federation#readme)
 - [react suspense with error boundary](https://github.com/kdilot/log/blob/main/next-with-boundary/README.md)
 - [electron with vite](https://github.com/kdilot/log/tree/main/electron-vite#readme)
